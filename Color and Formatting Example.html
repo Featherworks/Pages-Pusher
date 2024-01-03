@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:rgb(100,200,50);">
+<center>
+  
+  <h1>Colors!</h1>
+  <p style="color:red;">Can you change my color?</p>
+  <p style="font-size:20;">Can you make me bigger?</p>
+  <button onclick="yellowish()">Colorize!</button>
+  <button onclick="embiggen()">Embiggen!</button>
+
+</center>
+</body>
+<script>
+  function embiggen(){
+    document.getElementsByTagName("p")[1].style.fontSize = "larger"; // Also try "110%"
+  }
+  function yellowish(){
+    document.getElementsByTagName("p")[0].style.color = "#ffaa33";
+  }
+</script>
+</html>
